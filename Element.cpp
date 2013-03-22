@@ -1,0 +1,37 @@
+#include "Monde.h"
+#include "Position.h"
+
+Element::Element(){}
+
+Element::Element(const string & _s, const Position & _p) : Position(_p), nom(_s){}
+
+
+
+string Element::getnom() const{
+    return nom;
+}
+
+void Element::setNom(string _n){
+    nom=_n;
+}
+
+int Element::getPosXEl()const{
+    return pos.getPosX();
+}
+
+int Element::getPosYEl()const{
+    return pos.getPosY();
+}
+
+void Element::setMonde(Monde* _m)
+{
+    earth = _m;
+}
+
+Monde* Element::getMonde() const
+{
+    return earth;
+}
+
+void Element::agir()
+{}
