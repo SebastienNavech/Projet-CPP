@@ -31,6 +31,7 @@ Element * Monde::getElement(unsigned int i)
 
 Position & Monde::randPos()
 {
+    srand((time(NULL)));
     Position* posRand = new Position();
     bool posValid=false;
     while(posValid ==false)
@@ -38,8 +39,8 @@ Position & Monde::randPos()
         int x,y;
         while((x%2) != (y%2))
         {
-        x = rand()% LARGEUR_CARTE ; // changer 25 par une constante largeurMonde
-        y = rand()% HAUTEUR_CARTE; // changer 25 par une constante HauteurMonde
+        x = rand() % LARGEUR_CARTE ;
+        y = rand() % HAUTEUR_CARTE;
         }
 
         posRand = new Position(x,y);

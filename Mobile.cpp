@@ -8,9 +8,9 @@
     Retourne : true si case libre
                false si case occupée
 */
-bool verifPositionN(Position)
+bool verifPositionN(Position pPos)
 {
-   if(Position.getPosX()== HAUTEUR_CARTE) //OU POSITION OCCUPEE
+   if(pPos.getPosX()== HAUTEUR_CARTE) //OU POSITION OCCUPEE
     {
         return false;
     }
@@ -18,9 +18,9 @@ bool verifPositionN(Position)
 }
 
 
-bool verifPositionNE(Position)
+bool verifPositionNE(Position pPos)
 {
-    if(Postion.getPosX() == LARGEUR_CARTE || Position.getPosY()= HAUTER_CARTE) //OU POSITION OCCUPEE
+    if(pPos.getPosX() == LARGEUR_CARTE || pPos.getPosY() == HAUTEUR_CARTE) //OU POSITION OCCUPEE
     {
         return false;
     }
@@ -28,9 +28,9 @@ bool verifPositionNE(Position)
 }
 
 
-bool verifPositionSE(Position)
+bool verifPositionSE(Position pPos)
 {
-    if(Position.getPosX() == LARGEUR_CARTE || Position.getPosY()= BAS_CARTE) //OU POSITION OCCUPEE
+    if(pPos.getPosX() == LARGEUR_CARTE || pPos.getPosY() == SUD_CARTE) //OU POSITION OCCUPEE
     {
         return false;
     }
@@ -38,9 +38,9 @@ bool verifPositionSE(Position)
 }
 
 
-bool verifPositionS(Position)
+bool verifPositionS(Position pPos)
 {
-    if(Position.getPosY() == BAS_CARTE) //OU POSITION OCCUPEE
+    if(pPos.getPosY() == SUD_CARTE) //OU POSITION OCCUPEE
     {
         return false;
     }
@@ -48,9 +48,9 @@ bool verifPositionS(Position)
 }
 
 
-bool verifPositionSO(Position)
+bool verifPositionSO(Position pPos)
 {
-    if(Position.getPosY() == OUEST_CARTE + 1 || Position.getPosX() == SUD_CARTE)
+    if(pPos.getPosY() == OUEST_CARTE + 1 || pPos.getPosX() == SUD_CARTE)
     {
         return false;
     }
@@ -58,9 +58,9 @@ bool verifPositionSO(Position)
 }
 
 
-bool verifPositionNO(Position)
+bool verifPositionNO(Position pPos)
 {
-    if(Position.getPosX() == OUEST_CARTE || Position.getPosY() == NORD_CARTE - 1)
+    if(pPos.getPosX() == OUEST_CARTE || pPos.getPosY() == NORD_CARTE - 1)
     {
         return false;
     }

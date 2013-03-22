@@ -1,9 +1,12 @@
 #ifndef MONDE_H_INCLUDED
 #define MONDE_H_INCLUDED
+#include <time.h>
+#include <stdlib.h>
 #include <string>
 #include <vector>
 #include <map>
 #include "Position.h"
+#include "constantes.h"
 
 using namespace std;
 

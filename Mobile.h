@@ -1,6 +1,6 @@
 #ifndef MOBILE_H_INCLUDED
 #define MOBILE_H_INCLUDED
-#include "Element.h"
+#include "Monde.h"
 using namespace std;
 
 class Mobile : public Element
@@ -18,5 +18,5 @@ class Mobile : public Element
         bool verifPositionNO(Position);
 
     bool seDeplacer();
-}
+};
 #endif // MOBILE_H_INCLUDED
