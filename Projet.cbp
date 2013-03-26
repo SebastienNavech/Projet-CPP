@@ -33,11 +33,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Element.cpp" />
-		<Unit filename="Element.h" />
 		<Unit filename="Mobile.cpp" />
 		<Unit filename="Mobile.h" />
 		<Unit filename="Monde.cpp" />
 		<Unit filename="Monde.h" />
+		<Unit filename="Personne.cpp" />
+		<Unit filename="Personne.h" />
 		<Unit filename="Position.cpp" />
 		<Unit filename="Position.h" />
 		<Unit filename="constantes.h" />
