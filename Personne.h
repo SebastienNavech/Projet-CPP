@@ -5,6 +5,7 @@
 #include "Position.h"
 #include <string>
 
+using namespace std;
 
 class Personne : public Element,public Mobile
 {

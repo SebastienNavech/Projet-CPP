@@ -8,6 +8,8 @@ using namespace std;
 int main()
 {
     srand((time(NULL)));
+
     cout << "YOUHOU"<<endl;
+
     return 0;
 }

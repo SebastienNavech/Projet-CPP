@@ -4,8 +4,9 @@ Personne::Personne(int pSexe,string pNom,Monde * pMonde)
 {
 
     this->sexe = pSexe;
-    this->setNom(pNom);
-    this->getMonde()->randPos();
+    //this->setNom(pNom);
+    Element(pNom,getMonde()->randPos());
+    //this->getMonde()->randPos();
 }
 
 Personne::~Personne()
