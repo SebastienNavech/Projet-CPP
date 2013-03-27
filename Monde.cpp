@@ -4,11 +4,7 @@
 
 //template <Element*>
 
-/*
-faire une position aléatoire dans le monde
-réfléchir à une méthode "agir" (déplacer)
-*/
-Monde::Monde()
+Monde::Monde() : vector<Element*>(),monMonde()
 {
     int i;
 
@@ -18,6 +14,7 @@ Monde::Monde()
     monMonde.insert(pair<Position,unsigned int>(pPos,size()-1)); // ça déconne !!!!!!!
 
     /* PLACEMENT DE TOUS LES ELEMENTS DANS LE MONDE */
+    /*
     for(i=0;i<NB_GAULOIS_DEPART;i++)
     {
         Position pPos = this->randPos();
@@ -42,6 +39,7 @@ Monde::Monde()
         push_back(e);
         monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
+
     for(i=0;i<NB_ARBRES_DEPART;i++)
     {
         Position pPos = this->randPos();
@@ -50,6 +48,7 @@ Monde::Monde()
         push_back(e);
         monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
+    */
 }
 
 
@@ -82,4 +81,14 @@ Position & Monde::randPos()
 map<Position,unsigned int> & Monde::getMap()
 {
     return monMonde;
+}
+
+void Monde::afficher()
+{
+    map<Position, unsigned int>::iterator it = monMonde.begin();
+    unsigned int i;
+    for(i=0;i<monMonde.size();i++)
+    {
+
+    }
 }

@@ -23,6 +23,10 @@ class Monde : public vector<Element*>
     Position & randPos();
     map<Position,unsigned int> & getMap();
 
+    vector<Element*>::at;
+    vector<Element*>::size;
+    void afficher();
+
 };
 
 class Element{
