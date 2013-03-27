@@ -15,3 +15,10 @@
 #define EST_CARTE 0
 #define SUD_CARTE 0
 #define NORD_CARTE 15
+
+/*
+    QUANTITE POUR RESSOURCES
+*/
+
+#define RESSOURCEMAX 25
+#define RESSOURCEMIN 1
