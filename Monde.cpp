@@ -16,20 +16,15 @@ Monde::Monde()
     Element* e = new Element("toto",pPos);
     push_back(e);
     monMonde.insert(pair<Position,unsigned int>(pPos,size()-1)); // ça déconne !!!!!!!
-    /*
-    for(int i=0;i<6;i++)
-    {
-        push_back(new Element()); // a changer
 
-    }
-    */
-    ///////////// PLACEMENT DE TOUS LES ELEMENTS DANS LE MONDE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    /* PLACEMENT DE TOUS LES ELEMENTS DANS LE MONDE */
     for(i=0;i<NB_GAULOIS_DEPART;i++)
     {
         Position pPos = this->randPos();
         string nom = "Gaulois" + (i+1);
         Element* e = new Element(nom, pPos);
         push_back(e);
+        monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
     for(i=0;i<NB_GAULOISES_DEPART;i++)
     {
@@ -37,6 +32,7 @@ Monde::Monde()
         string nom = "Gauloise" + (i+1);
         Element* e = new Element(nom, pPos);
         push_back(e);
+        monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
     for(i=0;i<NB_SANGLIERS_DEPART;i++)
     {
@@ -44,6 +40,7 @@ Monde::Monde()
         string nom = "Sanglier" + (i+1);
         Element* e = new Element(nom, pPos);
         push_back(e);
+        monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
     for(i=0;i<NB_ARBRES_DEPART;i++)
     {
@@ -51,6 +48,7 @@ Monde::Monde()
         string nom = "Arbre" + (i+1);
         Element* e = new Element(nom, pPos);
         push_back(e);
+        monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
     }
 }
 

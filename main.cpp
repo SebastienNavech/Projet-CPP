@@ -9,7 +9,8 @@ int main()
 {
     srand((time(NULL)));
 
-    Monde Chine;
+    Monde* Chine;
+    Chine = new Monde();
     cout << "YOUHOU"<<endl;
 
     return 0;

@@ -28,17 +28,22 @@ class Monde : public vector<Element*>
 class Element{
 
     private:
+
     string nom;
     Position pos;
     Monde * earth;
 
     public:
-    //constructeurs
+
+    //constructeurs et destructeur
     Element();
     Element(string, Position);
+    virtual ~Element();
+
     // setteurs
     void setNom(string);
     void setMonde(Monde*);
+
     //getteurs
     string getnom() const;
     int getPosXEl()const;

@@ -2,6 +2,8 @@
 #define RESSOURCE_H
 #include "Monde.h"
 
+using namespace std;
+
 class Ressource : public virtual Element
 {
     private:
