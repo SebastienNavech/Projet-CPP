@@ -11,6 +11,7 @@ int main()
     cout << "YOUHOU"<<endl;
     Monde* chine;
     chine = new Monde();
+    chine->afficher();
 
     return 0;
 }

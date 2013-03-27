@@ -35,5 +35,10 @@ Monde* Element::getMonde() const
     return earth;
 }
 
+void Element::afficherQqch()
+{
+    cout << "Je suis " << this->getnom() << "  POSITION (" << this->getPosXEl() << ", " << this->getPosYEl() << ")" <<endl;
+}
+
 void Element::agir()
 {}

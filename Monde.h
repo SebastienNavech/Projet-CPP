@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string>
 #include <vector>
+#include <iostream>
 #include <map>
 #include "Position.h"
 #include "constantes.h"
@@ -54,6 +55,7 @@ class Element{
     int getPosYEl()const;
     Monde* getMonde() const;
     virtual void agir();
+    void afficherQqch();
 
 };
 

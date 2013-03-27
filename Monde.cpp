@@ -1,4 +1,3 @@
-#include <vector>
 #include "Monde.h"
 #include "constantes.h"
 
@@ -6,8 +5,7 @@
 
 Monde::Monde() : vector<Element*>(),monMonde()
 {
-    int i;
-
+    unsigned int i;
     Position pPos(2,2);
     Element* e = new Element("toto",pPos);
     push_back(e);
@@ -85,10 +83,10 @@ map<Position,unsigned int> & Monde::getMap()
 
 void Monde::afficher()
 {
-    map<Position, unsigned int>::iterator it = monMonde.begin();
+    //map<Position, unsigned int>::iterator it = monMonde.begin();
     unsigned int i;
     for(i=0;i<monMonde.size();i++)
     {
-
+        this->getElement(i)->afficherQqch();
     }
 }
