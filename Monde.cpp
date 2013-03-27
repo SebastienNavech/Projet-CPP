@@ -15,7 +15,7 @@ Monde::Monde()
     Position pPos(2,2);
     Element* e = new Element("toto",pPos);
     push_back(e);
-    monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
+    monMonde.insert(pair<Position,unsigned int>(pPos,size()-1)); // ça déconne !!!!!!!
     /*
     for(int i=0;i<6;i++)
     {

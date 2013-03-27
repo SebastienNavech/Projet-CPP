@@ -10,16 +10,11 @@
 	<File name="Mobile.h" open="1" top="0" tabpos="8">
 		<Cursor position="130" topLine="0" />
 	</File>
-	<File name="Monde.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="668" topLine="63" />
+	<File name="Monde.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="401" topLine="0" />
 	</File>
-<<<<<<< HEAD
-	<File name="Monde.h" open="1" top="1" tabpos="4">
-		<Cursor position="485" topLine="14" />
-=======
 	<File name="Monde.h" open="1" top="0" tabpos="4">
-		<Cursor position="534" topLine="19" />
->>>>>>> 080ce059c45234442f10f2bef218b6b756c61115
+		<Cursor position="534" topLine="0" />
 	</File>
 	<File name="Personne.cpp" open="1" top="0" tabpos="10">
 		<Cursor position="146" topLine="0" />
@@ -27,27 +22,16 @@
 	<File name="Personne.h" open="1" top="0" tabpos="11">
 		<Cursor position="299" topLine="0" />
 	</File>
-<<<<<<< HEAD
 	<File name="Position.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="1016" topLine="36" />
-=======
-	<File name="Position.cpp" open="1" top="1" tabpos="5">
-		<Cursor position="588" topLine="39" />
->>>>>>> 080ce059c45234442f10f2bef218b6b756c61115
+		<Cursor position="836" topLine="23" />
 	</File>
 	<File name="Position.h" open="1" top="0" tabpos="6">
 		<Cursor position="463" topLine="0" />
-	</File>
-	<File name="Ressource.cpp" open="1" top="0" tabpos="12">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="Ressource.h" open="1" top="0" tabpos="13">
-		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="constantes.h" open="1" top="0" tabpos="7">
 		<Cursor position="420" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="172" topLine="0" />
+		<Cursor position="184" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
