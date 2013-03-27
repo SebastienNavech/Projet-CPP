@@ -3,7 +3,7 @@
 
 Element::Element(){}
 
-Element::Element(string _s, Position _p) : pos(_p), nom(_s) {}
+Element::Element(string _s, Position _p) : pos(_p){nom=_s;}
 
 Element::~Element(){delete this;}
 

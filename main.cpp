@@ -8,9 +8,6 @@ using namespace std;
 int main()
 {
     srand((time(NULL)));
-
-    Monde* Chine;
-    Chine = new Monde();
     cout << "YOUHOU"<<endl;
 
     return 0;

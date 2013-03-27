@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Personne : public Element,public Mobile
+class Personne :public Mobile
 {
     private:
     int sexe;

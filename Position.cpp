@@ -1,4 +1,3 @@
-
 #include "Position.h"
 
 Position::Position()
@@ -7,21 +6,15 @@ Position::Position()
     posY = 0;
 }
 
-Position::Position(int _posX, int _posY)
-{
+Position::Position(int _posX, int _posY){
+
     posX = _posX;
     posY = _posY;
 }
 
-int Position::getPosX() const
-{
-    return(posX);
-}
+int Position::getPosX() const {return(posX);}
 
-int Position::getPosY() const
-{
-    return(posY);
-}
+int Position::getPosY() const {return(posY);}
 
 bool Position:: operator < (const Position & pos) const
 {
@@ -60,4 +53,24 @@ bool Position::operator == (const Position & pos) const
     egal = true;
 
     return egal;
+}
+
+bool Position::positionCorrecte(int p1,int p2)
+{
+    bool correct = false;
+
+    if((p1 > 0) && (p2 > 0) && (p1 <= HAUTEUR_CARTE) && (p2 <= LARGEUR_CARTE) && ((p1 % 2) == (p2 % 2)))
+        correct = true;
+
+    return correct;
+}
+
+bool Position::positionCorrecte(Position pPos)
+{
+    bool correct=false;
+
+    if((pPos.getPosX() > 0) && (pPos.getPosY() > 0) && (pPos.getPosX() <= HAUTEUR_CARTE) && (pPos.getPosY() <= LARGEUR_CARTE) && ((pPos.getPosX() % 2) == (pPos.getPosY() % 2)))
+    correct = true;
+    return correct;
+
 }
