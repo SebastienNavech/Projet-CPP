@@ -2,6 +2,7 @@
 #define MONDE_H_INCLUDED
 #include <time.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string>
 #include <vector>
 #include <iostream>
@@ -21,7 +22,8 @@ class Monde : public vector<Element*>
     public:
     Monde();
     Element * getElement(unsigned int);
-    Position & randPos();
+    bool caseVide(int, int);
+    Position  randPos();
     map<Position,unsigned int> & getMap();
 
     vector<Element*>::at;
@@ -54,6 +56,7 @@ class Element{
     int getPosXEl()const;
     int getPosYEl()const;
     Monde* getMonde() const;
+
     virtual void agir();
     void afficherQqch();
 

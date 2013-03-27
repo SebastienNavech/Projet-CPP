@@ -36,9 +36,10 @@
 	"constantes.h"
 	"position.h"
 
-1364426513 c:\users\hp\documents\github\projet-cpp\monde.h
+1364428400 c:\users\hp\documents\github\projet-cpp\monde.h
 	<time.h>
 	<stdlib.h>
+	<stdio.h>
 	<string>
 	<vector>
 	<iostream>
@@ -87,7 +88,7 @@
 1364420369 source:c:\users\hp\documents\github\projet-cpp\position.cpp
 	"Position.h"
 
-1364423067 source:c:\users\hp\documents\github\projet-cpp\main.cpp
+1364428483 source:c:\users\hp\documents\github\projet-cpp\main.cpp
 	<iostream>
 	<time.h>
 	<stdio.h>
@@ -138,7 +139,7 @@
 1364333931 c:\users\hp\documents\github\projet-cpp\mobile.h
 	"Monde.h"
 
-1364426812 source:c:\users\hp\documents\github\projet-cpp\element.cpp
+1364426910 source:c:\users\hp\documents\github\projet-cpp\element.cpp
 	"Monde.h"
 	"Position.h"
 

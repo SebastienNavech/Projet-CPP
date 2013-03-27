@@ -40,5 +40,4 @@ void Element::afficherQqch()
     cout << "Je suis " << this->getnom() << "  POSITION (" << this->getPosXEl() << ", " << this->getPosYEl() << ")" <<endl;
 }
 
-void Element::agir()
-{}
+void Element::agir(){}
