@@ -51,3 +51,13 @@ bool Position:: operator < (const Position & pos) const
     }
     return inferieur;
 }
+
+bool Position::operator == (const Position & pos) const
+{
+    bool egal=false;
+
+    if(this->getPosX() == pos.getPosX() && this->getPosY() == pos.getPosY())
+    egal = true;
+
+    return egal;
+}

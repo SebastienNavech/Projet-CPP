@@ -20,6 +20,7 @@ class Position
         int getPosY() const;
         //Surcharge d'opérateur
         bool operator < (const Position &) const;
+        bool operator ==(const Position &) const;
 };
 
 #endif
