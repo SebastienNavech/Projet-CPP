@@ -10,6 +10,8 @@ réfléchir à une méthode "agir" (déplacer)
 */
 Monde::Monde()
 {
+    int i;
+
     Position pPos(2,2);
     Element* e = new Element("toto",pPos);
     push_back(e);
@@ -21,6 +23,35 @@ Monde::Monde()
 
     }
     */
+    ///////////// PLACEMENT DE TOUS LES ELEMENTS DANS LE MONDE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    for(i=0;i<NB_GAULOIS_DEPART;i++)
+    {
+        Position pPos = this->randPos();
+        string nom = "Gaulois" + (i+1);
+        Element* e = new Element(nom, pPos);
+        push_back(e);
+    }
+    for(i=0;i<NB_GAULOISES_DEPART;i++)
+    {
+        Position pPos = this->randPos();
+        string nom = "Gauloise" + (i+1);
+        Element* e = new Element(nom, pPos);
+        push_back(e);
+    }
+    for(i=0;i<NB_SANGLIERS_DEPART;i++)
+    {
+        Position pPos = this->randPos();
+        string nom = "Sanglier" + (i+1);
+        Element* e = new Element(nom, pPos);
+        push_back(e);
+    }
+    for(i=0;i<NB_ARBRES_DEPART;i++)
+    {
+        Position pPos = this->randPos();
+        string nom = "Arbre" + (i+1);
+        Element* e = new Element(nom, pPos);
+        push_back(e);
+    }
 }
 
 
