@@ -35,7 +35,7 @@ class Element{
     public:
     //constructeurs
     Element();
-    Element(const string& ,const Position& );
+    Element(string, Position);
     // setteurs
     void setNom(string);
     void setMonde(Monde*);
