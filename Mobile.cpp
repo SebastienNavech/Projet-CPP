@@ -1,7 +1,22 @@
-#include <vector>
-#include "Monde.h"
-#include "constantes.h"
-#include "position.h"
+#include "Mobile.h"
+
+// REVOIR CE CONSTRUCTEUR DE MERDEUUUUH
+Mobile :: Mobile(string _nom,Position _pos,int _age,Monde & _monde) : Element(_nom,_pos)
+{
+    vitesse = rand() % VITESSE_MAX + VITESSE_MIN;
+    vue = rand() % VUE_MAX + VUE_MIN;
+    force = rand() % FORCE_MAX + FORCE_MIN;
+    vie = rand() % VIE_MAX + VIE_MIN;
+    esperance = rand() % ESPERANCE_MAX + ESPERANCE_MIN;
+    age = _age;
+    mde = &_monde;
+
+}
+
+
+
+
+
 
 /*
     Les méthodes suivantes permettent de vérifier si les cases adjacentes à celle fournie sont occupées

@@ -22,3 +22,38 @@
 
 #define RESSOURCEMAX 25
 #define RESSOURCEMIN 1
+
+/*
+    Vitesses des éléments "Mobile"
+*/
+
+#define VITESSE_MAX 3
+#define VITESSE_MIN 1
+
+/*
+    Vision des éléments "Mobile"
+*/
+
+#define VUE_MAX 2
+#define VUE_MIN 1
+
+/*
+    Force des éléments "Mobile"
+*/
+
+#define FORCE_MAX 10
+#define FORCE_MIN 1
+
+/*
+    Vie des éléments "Mobile"
+*/
+
+#define VIE_MAX 50
+#define VIE_MIN 1
+
+/*
+    Esperance des éléments "Mobile"
+*/
+
+#define ESPERANCE_MAX 100
+#define ESPERANCE_MIN 25

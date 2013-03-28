@@ -41,6 +41,8 @@
 		<Unit filename="Personne.h" />
 		<Unit filename="Position.cpp" />
 		<Unit filename="Position.h" />
+		<Unit filename="Ressource.cpp" />
+		<Unit filename="Ressource.h" />
 		<Unit filename="constantes.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
