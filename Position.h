@@ -21,6 +21,10 @@ class Position
         int getPosX() const;
         int getPosY() const;
 
+        //Setters
+        void setPosX(int);
+        void setPosY(int);
+
         //Surcharge d'opérateur
         bool operator < (const Position &) const;
         bool operator ==(const Position &) const;

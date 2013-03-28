@@ -1,6 +1,7 @@
 #include "Mobile.h"
 
 // REVOIR CE CONSTRUCTEUR DE MERDEUUUUH
+/*
 Mobile :: Mobile(string _nom,Position _pos,int _age,Monde & _monde) : Element(_nom,_pos)
 {
     vitesse = rand() % VITESSE_MAX + VITESSE_MIN;
@@ -11,7 +12,7 @@ Mobile :: Mobile(string _nom,Position _pos,int _age,Monde & _monde) : Element(_n
     age = _age;
     mde = &_monde;
 
-}
+} */
 
 
 
@@ -23,7 +24,7 @@ Mobile :: Mobile(string _nom,Position _pos,int _age,Monde & _monde) : Element(_n
     Retourne : true si case libre
                false si case occupée
 */
-bool verifPositionN(Position pPos)
+bool Mobile::verifPositionN(Position pPos)
 {
    if(pPos.getPosX()== HAUTEUR_CARTE) //OU POSITION OCCUPEE
     {
@@ -33,7 +34,7 @@ bool verifPositionN(Position pPos)
 }
 
 
-bool verifPositionNE(Position pPos)
+bool Mobile::verifPositionNE(Position pPos)
 {
     if(pPos.getPosX() == LARGEUR_CARTE || pPos.getPosY() == HAUTEUR_CARTE) //OU POSITION OCCUPEE
     {
@@ -43,7 +44,7 @@ bool verifPositionNE(Position pPos)
 }
 
 
-bool verifPositionSE(Position pPos)
+bool Mobile::verifPositionSE(Position pPos)
 {
     if(pPos.getPosX() == LARGEUR_CARTE || pPos.getPosY() == SUD_CARTE) //OU POSITION OCCUPEE
     {
@@ -53,7 +54,7 @@ bool verifPositionSE(Position pPos)
 }
 
 
-bool verifPositionS(Position pPos)
+bool Mobile::verifPositionS(Position pPos)
 {
     if(pPos.getPosY() == SUD_CARTE) //OU POSITION OCCUPEE
     {
@@ -63,7 +64,7 @@ bool verifPositionS(Position pPos)
 }
 
 
-bool verifPositionSO(Position pPos)
+bool Mobile::verifPositionSO(Position pPos)
 {
     if(pPos.getPosY() == OUEST_CARTE + 1 || pPos.getPosX() == SUD_CARTE)
     {
@@ -73,11 +74,89 @@ bool verifPositionSO(Position pPos)
 }
 
 
-bool verifPositionNO(Position pPos)
+bool Mobile::verifPositionNO(Position pPos)
 {
     if(pPos.getPosX() == OUEST_CARTE || pPos.getPosY() == NORD_CARTE - 1)
     {
         return false;
     }
     return true;
+}
+
+
+void Mobile::seDeplacer()
+{
+    int x=rand() % 6;
+    Position* datPos = new Position(this->getPosXEl(), this->getPosYEl());
+
+    if(x==1)
+    {
+        if(verifPositionN(*datPos)==true)
+        {
+            datPos->setPosY(datPos->getPosY()+2);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
+    if(x==2)
+    {
+        if(verifPositionNE(*datPos)==true)
+        {
+            datPos->setPosY(datPos->getPosY()+1);
+            datPos->setPosX(datPos->getPosX()+1);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
+    if(x==3)
+    {
+        if(verifPositionSE(*datPos)==true)
+        {
+            datPos->setPosY(datPos->getPosY()-1);
+            datPos->setPosX(datPos->getPosX()+1);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
+    if(x==4)
+    {
+        if(verifPositionS(*datPos)==true)
+        {
+            datPos->setPosX(datPos->getPosX()-2);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
+    if(x==5)
+    {
+        if(verifPositionSO(*datPos)==true)
+        {
+            datPos->setPosX(datPos->getPosX()-1);
+            datPos->setPosY(datPos->getPosY()-1);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
+    if(x==6)
+    {
+        if(verifPositionSO(*datPos)==true)
+        {
+            datPos->setPosX(datPos->getPosY()+1);
+            datPos->setPosX(datPos->getPosX()-1);
+        }
+        else
+        {
+            this->seDeplacer();
+        }
+    }
 }

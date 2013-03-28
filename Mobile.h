@@ -7,24 +7,24 @@ class Mobile : public virtual Element
 {
     private:
         typedef enum{NORD, NORDEST, SUDEST, SUD, SUDOUEST, NORDOUEST} direction;
-        int vitesse;
+        /*int vitesse;
         int vue;
         int force;
         int vie;
         int age;
         int esperance;
-        Monde *mde;
+        Monde *mde;*/
 
     public:
 
-        Mobile(string,Position,int,Monde &); // PROBLEME ICI
+        //Mobile(string,Position,int,Monde &); // PROBLEME ICI
         bool verifPositionN(Position);
         bool verifPositionNE(Position);
         bool verifPositionSE(Position);
         bool verifPositionS(Position);
         bool verifPositionSO(Position);
         bool verifPositionNO(Position);
-        bool seDeplacer();
+        void seDeplacer();
 
 
 };

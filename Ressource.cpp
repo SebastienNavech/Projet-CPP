@@ -1,6 +1,6 @@
 #include "Ressource.h"
 
-Ressource::Ressource() : Element();
+Ressource::Ressource() : Element()
 {
     //ctor
     quantite = rand() % RESSOURCEMAX - RESSOURCEMIN;
@@ -17,7 +17,7 @@ Ressource::~Ressource()
     delete this;
 }
 
-int Ressource::getQuantite(int pQ)
+int Ressource::getQuantite() const
 {
     return quantite;
 }

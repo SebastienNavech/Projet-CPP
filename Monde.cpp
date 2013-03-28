@@ -21,6 +21,7 @@ Monde::Monde() : vector<Element*>(),monMonde()
         push_back(e);
         monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
         cout << "Gaulois cree avec comme position : ( " << pPos.getPosX() << " , " <<pPos.getPosY() << " )" << endl;
+
     }
 
     for(i=0;i<NB_GAULOISES_DEPART;i++)

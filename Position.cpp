@@ -16,6 +16,10 @@ int Position::getPosX() const {return(posX);}
 
 int Position::getPosY() const {return(posY);}
 
+void Position::setPosX(int _posX) {posX = _posX;}
+
+void Position::setPosY(int _posY) {posY = _posY;}
+
 bool Position:: operator < (const Position & pos) const
 {
     bool inferieur;
@@ -72,5 +76,4 @@ bool Position::positionCorrecte(Position pPos)
     if((pPos.getPosX() > 0) && (pPos.getPosY() > 0) && (pPos.getPosX() <= HAUTEUR_CARTE) && (pPos.getPosY() <= LARGEUR_CARTE) && ((pPos.getPosX() % 2) == (pPos.getPosY() % 2)))
     correct = true;
     return correct;
-
 }
