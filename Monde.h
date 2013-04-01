@@ -60,6 +60,16 @@ class Element{
     virtual void agir();
     void afficherQqch();
 
+    bool verifPositionN(Position);
+        bool verifPositionNE(Position);
+        bool verifPositionSE(Position);
+        bool verifPositionS(Position);
+        bool verifPositionSO(Position);
+        bool verifPositionNO(Position);
+        void seDeplacer();
+    void setPosX(int);
+    void setPosY(int);
+
 };
 
 #endif // MONDE_H_INCLUDED

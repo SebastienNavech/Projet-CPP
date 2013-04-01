@@ -15,12 +15,15 @@ Monde::Monde() : vector<Element*>(),monMonde()
 
     for(i=0;i<NB_GAULOIS_DEPART;i++)
     {
+        srand((time(NULL)));
         Position pPos = this->randPos();
         string nom = "Gaulois" + (i+1) ;
         Element* e = new Element(nom, pPos);
         push_back(e);
         monMonde.insert(pair<Position,unsigned int>(pPos,size()-1));
         cout << "Gaulois cree avec comme position : ( " << pPos.getPosX() << " , " <<pPos.getPosY() << " )" << endl;
+        e->seDeplacer();
+        cout << "Gaulois se balade et arrive en position : ( " << e->getPosXEl() << " , " << e->getPosYEl() << " )" << endl;
 
     }
 
